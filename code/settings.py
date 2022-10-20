@@ -4,6 +4,12 @@ WIDTH = 1280
 HEIGTH = 720
 FPS = 60
 TILESIZE = 64
+HITBOX_OFFSET = {
+    'player': -26,
+    'object': -40,
+    'grass': -10,
+    'invisible': 0,
+}
 
 # ? ui
 BAR_HEIGHT = 20
@@ -57,40 +63,3 @@ monster_data = {
     'bamboo': {'health': 70, 'exp': 120, 'damage': 6, 'attack_type': 'leaf_attack',
                'attack_sound': '../audio/attack/slash.wav', 'speed': 3, 'resistance': 3, 'attack_radius': 50,
                'notice_radius': 300}}
-
-# ? particle dictionary
-# self.frames = {
-#     # magic
-#     'flame': import_folder('../graphics/particles/flame/frames'),
-#     'aura': import_folder('../graphics/particles/aura'),
-#     'heal': import_folder('../graphics/particles/heal/frames'),
-#
-#     # attacks
-#     'claw': import_folder('../graphics/particles/claw'),
-#     'slash': import_folder('../graphics/particles/slash'),
-#     'sparkle': import_folder('../graphics/particles/sparkle'),
-#     'leaf_attack': import_folder('../graphics/particles/leaf_attack'),
-#     'thunder': import_folder('../graphics/particles/thunder'),
-#
-#     # monster deaths
-#     'squid': import_folder('../graphics/particles/smoke_orange'),
-#     'raccoon': import_folder('../graphics/particles/raccoon'),
-#     'spirit': import_folder('../graphics/particles/nova'),
-#     'bamboo': import_folder('../graphics/particles/bamboo'),
-#
-#     # leafs
-#     'leaf': (
-#         import_folder('../graphics/particles/leaf1'),
-#         import_folder('../graphics/particles/leaf2'),
-#         import_folder('../graphics/particles/leaf3'),
-#         import_folder('../graphics/particles/leaf4'),
-#         import_folder('../graphics/particles/leaf5'),
-#         import_folder('../graphics/particles/leaf6'),
-#         self.reflect_images(import_folder('../graphics/particles/leaf1')),
-#         self.reflect_images(import_folder('../graphics/particles/leaf2')),
-#         self.reflect_images(import_folder('../graphics/particles/leaf3')),
-#         self.reflect_images(import_folder('../graphics/particles/leaf4')),
-#         self.reflect_images(import_folder('../graphics/particles/leaf5')),
-#         self.reflect_images(import_folder('../graphics/particles/leaf6'))
-#     )
-# }
