@@ -72,7 +72,8 @@ class Level:
                                  random_grass_image)
                         if style == 'object':
                             # ? create a object tile
-                            object_surface = graphics['objects'][int(col)]
+                            num = int(col)
+                            object_surface = graphics['objects'][num]
                             Tile((x, y), [self.visible_sprites, self.obstacle_sprites], 'object', object_surface)
                         if style == 'entities':
                             if col == '394':
